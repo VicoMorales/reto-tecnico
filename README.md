@@ -1,2 +1,2 @@
-# reto-tecnico-backend
-Solución de reto técnico backend
+# reto-tecnico
+Solución de reto técnico
