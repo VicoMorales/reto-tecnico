@@ -68,6 +68,7 @@ export class ProductPresenter {
               duration: 3000
             })
             this.form.reset();
+            this.dialog.closeAll();
             this.getProducts();
           }
         }
