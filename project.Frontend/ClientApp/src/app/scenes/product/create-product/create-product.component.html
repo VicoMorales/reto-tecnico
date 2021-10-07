@@ -1,0 +1,47 @@
+<mat-card>
+  <mat-card-header>
+    <div class="text-center w-100">
+      <h1><b>Ingresar Producto</b></h1>
+    </div>
+
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="_presenter.form" class="form">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <mat-form-field >
+              <mat-label>Producto</mat-label>
+              <input matInput type="text" placeholder="Ingrese el nombre del producto" formControlName="productName"
+                 autocomplete="off" />
+              <mat-hint align="start"><strong>Ingrese el nombre del producto</strong> </mat-hint>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <mat-form-field >
+              <mat-label>Precio</mat-label>
+              <input matInput type="number" placeholder="Ingrese el precio del producto" formControlName="price"
+                 autocomplete="off" />
+              <mat-hint align="start"><strong>Ingrese el precio del producto</strong> </mat-hint>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <mat-form-field >
+              <mat-label>Stock</mat-label>
+              <input matInput type="number" placeholder="Ingrese el stock del producto" formControlName="stock"
+                 autocomplete="off" />
+              <mat-hint align="start"><strong>Ingrese el stock del producto</strong> </mat-hint>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button mat-raised-button color="primary" (click)="_presenter.addProduct()">Añadir</button>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

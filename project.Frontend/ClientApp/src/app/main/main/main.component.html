@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Reto App</span>
+    <span class="example-spacer"></span>
+    {{user}}
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item >
+        <mat-icon>power_settings_new</mat-icon>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-tab-group>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <span >Ver Productos</span>
+  </ng-template>
+    <div class="content-tab">
+      <app-product></app-product>
+    </div>
+  </mat-tab>
+  <mat-tab label="Añadir Producto">
+    <div class="content-tab">
+      <app-create-product></app-create-product>
+    </div>
+  </mat-tab>
+
+</mat-tab-group>

@@ -1,0 +1,11 @@
+.content-tab{
+  padding: 4rem;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+@media (max-width:500px){
+  .content-tab{
+    padding: 4rem 0px;
+  }
+}
