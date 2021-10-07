@@ -39,6 +39,7 @@ export class ProductPresenter {
             this._snackBar.open('Se guardó correctamente', 'Success', {
               duration: 3000
             })
+            this.form.reset();
             this.getProducts();
           }
         }
